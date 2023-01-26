@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import AddTodo from "./components/AddTodo";
 import Header from "./components/Header";
 import TodoList from "./components/TodoList";
 import uuid from "react-uuid";
+import { readDataFromLocalStorage } from "./components/api";
 
 function App() {
   const [selected, setSelected] = useState("all");
-  const [todoList, setTodoList] = useState([
-    { title: "공부하기", state: true, id: "123" },
-  ]);
+  const [todoList, setTodoList] = useState(readDataFromLocalStorage());
+
+  useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+  }, [todoList]);
 
   const handleOnClick = (e) => {
     e.preventDefault();
