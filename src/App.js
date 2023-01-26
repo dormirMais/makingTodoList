@@ -22,6 +22,10 @@ function App() {
   const addTodo = (e) => {
     e.preventDefault();
     const todo = e.target.todoinput.value;
+    if (todo.trim() === "") {
+      alert("you should put message");
+      return;
+    }
     e.target.todoinput.value = "";
     setTodoList((prev) => {
       return [...prev, { title: todo, state: false, id: uuid() }];
