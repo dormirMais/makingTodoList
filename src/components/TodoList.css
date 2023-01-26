@@ -1,0 +1,9 @@
+.todoListSection {
+  height: 70%;
+
+  overflow-y: scroll;
+}
+
+.todoListUl {
+  padding-left: 0;
+}

@@ -1,0 +1,23 @@
+.todoSection {
+  display: flex;
+  font-size: 30px;
+  display: flex;
+
+  margin-bottom: 9px;
+  width: 100%;
+  align-items: center;
+}
+.todoCheckBox {
+  width: 25px;
+  height: 25px;
+  flex-basis: 10%;
+}
+.todoTitle {
+  list-style: none;
+  flex-basis: 80%;
+}
+
+.trashcan {
+  cursor: pointer;
+  flex-basis: 10%;
+}

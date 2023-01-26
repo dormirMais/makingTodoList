@@ -1,0 +1,26 @@
+.headerSection {
+  width: 100%;
+  height: 15%;
+  padding: 3%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerTheme {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.headerSection button {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 4px;
+  display: inline-block;
+  background-color: #519d9e;
+  color: #9dc8c8;
+}

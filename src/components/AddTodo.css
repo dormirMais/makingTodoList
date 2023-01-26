@@ -1,0 +1,29 @@
+.addTodoSection {
+  height: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addTodoInput {
+  font-size: 23px;
+  padding: 10px 3px;
+  width: 420px;
+  border: 0;
+  background-color: rgb(233, 233, 233);
+  margin-right: 3px;
+}
+
+.addTodoSubmitBtn {
+  cursor: pointer;
+  font-size: 23px;
+  padding: 10px 3px;
+  width: 60px;
+  border: 0;
+}
+.addTodoInput:focus {
+  outline: none !important;
+  border-color: #d6a8e9;
+  box-shadow: 0 0 10px #d6a8e9;
+}
