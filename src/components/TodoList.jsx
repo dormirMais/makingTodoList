@@ -11,12 +11,12 @@ export default function TodoList({
   let newTodoList = todoList;
   if (selected === "active") {
     newTodoList = newTodoList.filter((todo) => {
-      return todo.state === true;
+      return todo.state === false;
     });
   }
   if (selected === "completed") {
     newTodoList = newTodoList.filter((todo) => {
-      return todo.state === false;
+      return todo.state === true;
     });
   }
 
