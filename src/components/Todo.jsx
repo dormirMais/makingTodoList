@@ -16,7 +16,9 @@ export default function Todo({ todo, id, handleChecked, removeTodo }) {
         onChange={checkTodo}
         checked={todo.state ? true : false}
       />
-      <li className="todoTitle">{todo.title}</li>
+      <li className={"todoTitle " + (todo.state ? "todoTitleChecked" : "")}>
+        {todo.title}
+      </li>
 
       <BsFillTrashFill className="trashcan" onClick={() => removeTodo(id)} />
     </section>

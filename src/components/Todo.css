@@ -16,7 +16,11 @@
   list-style: none;
   flex-basis: 80%;
 }
-
+.todoTitleChecked {
+  opacity: 0.5;
+  color: red;
+  text-decoration: line-through;
+}
 .trashcan {
   cursor: pointer;
   flex-basis: 10%;
