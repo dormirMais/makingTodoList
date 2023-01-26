@@ -23,4 +23,10 @@
   display: inline-block;
   background-color: #519d9e;
   color: #9dc8c8;
+  transition: 0.3s;
+}
+
+.headerSection button:hover {
+  scale: 1.1;
+  filter: brightness(120%);
 }
